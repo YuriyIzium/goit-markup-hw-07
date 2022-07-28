@@ -1,11 +1,15 @@
 :root {
-	--title-collor: #212121;
-	--accent-color: #2196f3;
-	--primary-text-color: #757575;
-	--primary-white: #ffffff;
-	--secondery-bg: #2f303a;
-	--team-btn-color: #f5f4fa;
-	--fill-social-icons: #afb1b8;
-	--accent-hover-btn: #188ce8;
-	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- }
+  --title-collor: #212121;
+  --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --primary-white: #ffffff;
+  --secondery-bg: #2f303a;
+  --team-btn-color: #f5f4fa;
+  --fill-social-icons: #afb1b8;
+  --accent-hover-btn: #188ce8;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --set-indent: 30px;
+  --set-item: 3;
+}
