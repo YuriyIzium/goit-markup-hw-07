@@ -1,0 +1,33 @@
+.icon-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ 
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+}
+ 
+	.icon-wrapper__bg--white {
+	background-color: var(--primary-white);
+	fill: var(--fill-social-icons);
+	transition: fill 250ms var(--timing-function),
+	 background-color 250ms var(--timing-function);
+ }
+ 
+ .icon-wrapper__bg--white:hover,
+ .icon-wrapper__bg--white:focus {
+	fill: var(--primary-white);
+	background-color: var(--accent-color);
+ }
+
+ .icon-wrapper__bg--greey:hover,
+ .icon-wrapper__bg--greey:focus {
+	background: var(--accent-color);
+ }
+
+.icon-wrapper__bg--greey {
+background-color: rgba(255, 255, 255, 0.1);
+fill: var(--primary-white);
+transition: background-color 250ms var(--timing-function);
+}
