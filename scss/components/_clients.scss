@@ -1,13 +1,14 @@
-.client__block {
-  margin-top: 50px;
-  --set-item: 6;
+.clients {
+  @include section();
+
+  &__block {
+    margin-top: 50px;
+    --set-item: 6;
+  }
 }
 
 .client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
+  @extend %centreFlex;
   height: 92px;
   color: var(--fill-social-icons);
   border: 1px solid var(--fill-social-icons);
@@ -16,10 +17,10 @@
 
   transition: fill 250ms var(--timing-function),
     border 250ms var(--timing-function);
-}
 
-.client-link:hover,
-.client-link:focus {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
 }

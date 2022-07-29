@@ -1,14 +1,14 @@
 @import "./utils/variables";
 @import "./utils/base";
 @import "./utils/hidden";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 
 @import "./layouts/container";
-@import "./layouts/section";
 @import "./layouts/backdrop";
 
 @import "./components/header";
 @import "./components/logo";
-@import "./components/buttons";
 @import "./components/hero";
 @import "./components/features";
 @import "./components/title";
@@ -16,7 +16,7 @@
 @import "./components/team";
 @import "./components/social-icons";
 @import "./components/icon-wrapper";
-@import "./components/client";
+@import "./components/clients";
 @import "./components/filter";
 @import "./components/projects";
 @import "./components/footer";

@@ -1,79 +1,77 @@
 .header {
-	border-bottom: 1px solid #ececec;
- }
- 
- .header__inner {
-	display: flex;
-	align-items: center;
- }
+  border-bottom: 1px solid #ececec;
 
- .header__nav {
-	display: flex;
-	justify-content: space-between;
-	gap: 50px;
- }
- 
- .header__link {
-	position: relative;
-	display: block;
-	padding: 32px 0;
- 
-	font-weight: 500;
-	font-size: 14px;
-	letter-spacing: 0.02em;
-	color: var(--title-collor);
- 
-	transition: color 250ms var(--timing-function);
- }
- 
- .header__link:hover,
- .header__link:focus {
-	color: var(--accent-color);
- }
- 
- .header__link--current {
-	color: var(--accent-color);
- }
- 
- .header__link--current::after {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0;
-	bottom: -1px;
- 
-	height: 4px;
-	width: 100%;
-	border-radius: 2px;
-	background-color: var(--accent-color);
- }
- 
- .header__contacts-block {
-	margin-left: auto;
-	display: flex;
-	gap: 50px;
- }
- 
- .header__contact {
-	display: flex;
-	align-items: center;
-	padding: 32px 0;
- 
-	font-weight: 500;
-	font-size: 14px;
-	letter-spacing: 0.02em;
-	color: var(--primary-text-color);
- 
-	transition: color 250ms var(--timing-function);
- }
- 
- .header__contact:hover,
- .header__contact:focus {
-	color: var(--accent-color);
- }
+  &__inner {
+    @extend %centreFlex;
+  }
 
- .header__icon {
-	display: inline-block;
-	margin-right: 10px;
-	fill: currentColor;
- }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--title-collor);
+
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__link--current {
+    color: var(--accent-color);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__contacts-block {
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+  }
+
+  &__contact {
+    @extend %centreFlex;
+    padding: 32px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
